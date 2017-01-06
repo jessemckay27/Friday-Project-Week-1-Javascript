@@ -6,11 +6,22 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var jshint = require('gulp-jshint');
 var utilities = require('gulp-util');
-var lib = require('bower-files')();
+
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
 var buildProduction = utilities.env.production;
+var lib = require('bower-files')({
+  "overrides":{
+    "bootstrap" : {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  }
+});
 
 gulp.task('bowerJS', function() {
   return gulp.src(lib.ext('js').files)
