@@ -8,14 +8,21 @@
   <title>Better Doctor</title>
   </head>
   <body>
+    <div id="header">
+      <div class="container">
+        <div class="row">
+          <div id="header-text">DoctorFinder</div>
+        </div>
+      </div>
+    </div>
     <div class="container">
-      <div class="row">
-        <form class="form-group">
-          <label>What is your ailment?</label>
-          <input type="text" id="ailment-input" placeholder="What is yoru ailment?">
-          <button class="btn" type="submit" name="button">Find Doctor</button>
+      <div class="row col">
+        <form id="get-doctor" class="form-group">
+          <input id="ailment" class="form-control" type="text" placeholder="Enter your ailment">
+          <button class="btn" type="submit" name="button">Search</button>
         </form>
       </div>
+      <div id="fix-width" class="row"></div>
     </div>
   </body>
 </html>

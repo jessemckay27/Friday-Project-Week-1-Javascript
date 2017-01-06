@@ -1,0 +1,73 @@
+$blue : #1e6da5;
+$red : #da1414;
+
+body {
+  background-color: #f5f5f5;
+}
+
+#header {
+  height: 60px;
+  background-color: #fff;
+  border-bottom: 1px solid #dadada;
+}
+
+#header-text {
+  line-height: 60px;
+  font-size: 2.5em;
+  font-weight: 900;
+  color: $blue;
+  display: inline-block;
+}
+
+.row {
+  padding: 0px 20px;
+}
+
+#form-wrap {
+  background-color: #fff;
+  position: relative;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+button {
+  background-color: $red;
+  color: #fff;
+}
+
+.doctor-wrap {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.doctor-wrap img {
+  height: 260px;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.doctor-box {
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  height: 94%;
+  width: 94%;
+  border-radius: 10px;
+}
+
+.doctor-img-wrap {
+  border-bottom: 1px solid #dadada;
+}
+
+.doctor-info-wrap {
+  padding: 10px;
+}
