@@ -6,6 +6,7 @@ Doctor = function(){
 Doctor.prototype.getDoctor = function(ailment) {
   $.get('https://api.betterdoctor.com/2016-03-01/doctors?query=' + ailment + '&skip=0&limit=12&user_key=' + apiKey).then(function(response) {
     for (i = 0; i < 11; i++) {
+      console.log(response.data);
       var doctorImage = response.data[i].profile.image_url;
       var doctorFirstName = response.data[i].profile.first_name;
       var doctorLastName = response.data[i].profile.last_name;
@@ -13,7 +14,7 @@ Doctor.prototype.getDoctor = function(ailment) {
     }
 
   }).fail(function(error) {
-    $('.showDoctor').text(error.responseJSON.message);
+    $('#showError').text(error.responseJSON.message);
   });
 }
 
