@@ -1,4 +1,4 @@
-#Band Tracker
+#BetterDoctor Search
 
 #### _A website to search for doctors by ailment_
 
